@@ -1,0 +1,58 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: indigo;
+  color: white;
+}
+div {
+  margin: 1rem;
+  text-align: left;
+}
+input,
+textarea {
+  display: block;
+  /* margin: auto; */
+}
+.Gender,
+.food-box {
+  display: inline;
+}
+.gender-sub,
+.food-list {
+  margin-left: 0;
+}
+.container {
+  width: fit-content;
+  margin: auto;
+  padding: 2rem;
+  background-color: ivory;
+  color: black;
+  font-weight: bold;
+}
+.textbox {
+  height: 1.5rem;
+  width: 15rem;
+  border-radius: 0.3rem;
+}
+.submit-form {
+  width: fit-content;
+  margin: auto;
+  padding: 1rem;
+}
+.submit-btn {
+  width: 12rem;
+  height: 2rem;
+  border-radius: 0.3rem;
+  background: burlywood;
+}
+table {
+  width: 100%;
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+td {
+  border: 2px solid white;
+}
+#error-msg {
+  color: red;
+  display: none;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form to Table</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="forms.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <div class="first-name">
+          <label for="first-name">First Name</label>
+          <input type="text" name="firstname" id="First-name" class="textbox" />
+          <div id="error-msg" class="fname-err">*Please Enter First Name</div>
+        </div>
+        <div class="lastname">
+          <label for="last-name">Last Name</label>
+          <input type="text" name="last-name" id="Last-name" class="textbox" />
+          <div id="error-msg" class="lname-err">*Please Enter Last Name</div>
+        </div>
+        <div class="address">
+          <label for="address">Address</label>
+          <!-- <input type="text" name="address" id="address" /> -->
+          <textarea name="address" id="Address" cols="32" rows="5"></textarea>
+          <div id="error-msg" class="address-err">*Please Enter Address</div>
+        </div>
+        <div class="pincode">
+          <label for="pincode">Pincode</label>
+          <input type="pincode" name="pincode" id="Pincode" class="textbox" />
+          <div id="error-msg" class="pin-err">*Please Enter Pincode</div>
+        </div>
+        <div class="gender">
+          <label for="gender">Gender</label><br />
+          <div class="gender-sub">
+            <input type="radio" name="gender" class="Gender" value="Female" />
+            <label for="gender">Female</label>
+
+            <input type="radio" name="gender" class="Gender" value="Male" />
+            <label for="gender">Male</label>
+          </div>
+          <div id="error-msg" class="gender-err">*Please select gender</div>
+        </div>
+        <div class="food">
+          <label for="first-name">Food</label>
+          <div class="food-list">
+            <label for="food">Rice</label>
+            <input
+              type="checkbox"
+              name="food"
+              id="Food1"
+              class="food-box"
+              value="Rice"
+            />
+
+            <label for="food">Dal</label>
+            <input
+              type="checkbox"
+              name="food"
+              id="Food2"
+              class="food-box"
+              value="Dal"
+            />
+
+            <label for="food">Sabji</label>
+            <input
+              type="checkbox"
+              name="food"
+              id="Food3"
+              class="food-box"
+              value="Sabji"
+            />
+
+            <label for="food">Curd</label>
+            <input
+              type="checkbox"
+              name="food"
+              id="Food4"
+              class="food-box"
+              value="Curd"
+            />
+
+            <label for="food">Sweet</label>
+            <input
+              type="checkbox"
+              name="food"
+              id="Food5"
+              class="food-box"
+              value="Sweet"
+            />
+          </div>
+          <div id="error-msg" class="food-err">
+            *Please Select atleast 2 choices
+          </div>
+        </div>
+        <div class="state-div">
+          <label for="state">State</label>
+          <input type="text" name="state" id="State" class="textbox" />
+          <div id="error-msg" class="state-err">*Please Enter State Name</div>
+        </div>
+        <div class="country">
+          <label for="country">Country</label>
+          <input type="text" name="country" id="Country" class="textbox" />
+          <div id="error-msg" class="country-err">
+            *Please Enter Country Name
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="submit-form">
+      <input type="submit" value="Submit" class="submit-btn" />
+    </div>
+
+    <script src="form_js.js"></script>
+  </body>
+</html>
